@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.options = void 0;
+require('dotenv').config();
 exports.options = {
     definition: {
         openapi: "3.0.0",
@@ -11,7 +12,7 @@ exports.options = {
         },
         servers: [
             {
-                url: "http://localhost:3000"
+                url: `${process.env.PORT}`
             }
         ]
     },

@@ -1,4 +1,6 @@
-require('dotenv').config()
+import dotenv from "dotenv"
+
+dotenv.config()
 export const options = {
     definition: {
         openapi: "3.0.0",
@@ -9,7 +11,7 @@ export const options = {
         },
         servers: [
             {
-                url: `${process.env.PORT}`
+                url: `${process.env.SWAGGER_HOST}`
             }
         ]
     },

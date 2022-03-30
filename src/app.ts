@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 import express from 'express'
 import cors from 'cors'
 import morgan from 'morgan'
@@ -12,7 +10,7 @@ import {options} from './swaggerOptions'
 import taskRoutes from './routes/tasks.routes'
 const app = express()
 
-app.set('PORT', `${process.env.PORT}` || 3000);
+app.set('PORT', process.env.PORT || 3000);
 
 app.use(cors())
 app.use(morgan('dev'))
