@@ -1,0 +1,32 @@
+GET http://localhost:3000/tasks
+
+### 
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "name": "Crear una aplicacion web",
+    "description": "En Angular"
+}
+
+
+###
+GET http://localhost:3000/tasks/cNBh4AX75lJHPvQwAe2Vn
+
+
+
+###
+DELETE  http://localhost:3000/tasks/fXw_qOFk3tyDY8eDgGuuI
+
+###
+PUT http://localhost:3000/tasks/dmIcTv4SFvyiSwmyql58D
+Content-Type: application/json
+
+{
+    "name": "Crear una app movil",
+    "description": "Nativo Android"
+}
+
+###
+GET http://localhost:3000/tasks/count
