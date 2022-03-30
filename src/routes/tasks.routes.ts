@@ -52,13 +52,7 @@ const router = Router();
  *        type: string
  *      description: The Task id
  */
-/**
- * @swagger
- * tags:
- *  name: Tasks
- *  description: Tasks endpoint
- *
- */
+
 
 /**
  * @swagger

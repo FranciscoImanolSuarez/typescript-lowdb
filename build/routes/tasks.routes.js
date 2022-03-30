@@ -47,13 +47,6 @@ const router = (0, express_1.Router)();
  */
 /**
  * @swagger
- * tags:
- *  name: Tasks
- *  description: Tasks endpoint
- *
- */
-/**
- * @swagger
  * /tasks:
  *  get:
  *   summary: Return a Tasks list
