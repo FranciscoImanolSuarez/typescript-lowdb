@@ -1,3 +1,4 @@
+require('dotenv').config()
 export const options = {
     definition: {
         openapi: "3.0.0",
@@ -8,7 +9,7 @@ export const options = {
         },
         servers: [
             {
-                url: "http://localhost:3000"
+                url: `http://localhost:${process.env.PORT}`
             }
         ]
     },
